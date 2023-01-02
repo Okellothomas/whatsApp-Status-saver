@@ -24,14 +24,14 @@
 
         <androidx.cardview.widget.CardView
             android:layout_width="0dp"
-            android:layout_height="210dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="4dp"
+            android:layout_height="410dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
             android:layout_weight="1"
             android:background="@drawable/rounded"
             android:scaleType="centerCrop"
             android:src="@drawable/loverss"
-            app:cardCornerRadius="20dp">
+            app:cardCornerRadius="60dp">
 
             <ImageView
                 android:id="@+id/imageone"
@@ -44,15 +44,14 @@
 
         <androidx.cardview.widget.CardView
             android:layout_width="0dp"
-            android:layout_height="210dp"
-            android:layout_marginLeft="5dp"
-
-            android:layout_marginRight="4dp"
+            android:layout_height="410dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
             android:layout_weight="1"
             android:background="@drawable/rounded"
             android:scaleType="centerCrop"
             android:src="@drawable/loverss"
-            app:cardCornerRadius="20dp">
+            app:cardCornerRadius="60dp">
 
             <ImageView
                 android:id="@+id/imagetwo"
@@ -66,7 +65,7 @@
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
-        android:layout_height="230dp"
+        android:layout_height="410dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="2dp"
         android:layout_marginEnd="8dp"
@@ -81,15 +80,14 @@
 
         <androidx.cardview.widget.CardView
             android:layout_width="0dp"
-            android:layout_height="210dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginRight="4dp"
+            android:layout_height="410dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
             android:layout_weight="1"
             android:background="@drawable/rounded"
             android:scaleType="centerCrop"
             android:src="@drawable/loverss"
-            app:cardCornerRadius="20dp">
+            app:cardCornerRadius="60dp">
 
             <ImageView
                 android:id="@+id/imagethree"
@@ -101,15 +99,14 @@
 
         <androidx.cardview.widget.CardView
             android:layout_width="0dp"
-            android:layout_height="210dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginRight="4dp"
+            android:layout_height="410dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
             android:layout_weight="1"
             android:background="@drawable/rounded"
             android:scaleType="centerCrop"
             android:src="@drawable/loverss"
-            app:cardCornerRadius="20dp">
+            app:cardCornerRadius="60dp">
 
             <ImageView
                 android:id="@+id/imagefour"
@@ -124,7 +121,7 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
         android:layout_width="0dp"
-        android:layout_height="190dp"
+        android:layout_height="490dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="2dp"
@@ -132,7 +129,7 @@
         android:background="@drawable/rounded"
         android:scaleType="centerCrop"
         android:src="@drawable/loverss"
-        app:cardCornerRadius="20dp"
+        app:cardCornerRadius="60dp"
         android:outlineAmbientShadowColor="@color/gnt_gray"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
