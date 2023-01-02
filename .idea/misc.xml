@@ -15,6 +15,7 @@
         <entry key="app/src/main/res/layout/fragment_whatsapp_image.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_whatsapp_saved_video.xml" value="0.1484375" />
         <entry key="app/src/main/res/layout/fragment_whatsapp_videos.xml" value="0.1484375" />
+        <entry key="app/src/main/res/layout/image_list_item.xml" value="0.16339869281045752" />
         <entry key="app/src/main/res/layout/slide_layout.xml" value="0.25" />
       </map>
     </option>
