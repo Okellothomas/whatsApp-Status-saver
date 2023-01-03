@@ -143,6 +143,7 @@ public class WhatsappSavedVideoFragment extends Fragment {
 
         AdView adView = new AdView(activity);
         adView.setAdSize(AdSize.BANNER);
+        adView.setAdUnitId("ca-app-pub-3940256099942544/630097");
         mAdView = v.findViewById(R.id.vadView);
         mAdView.loadAd(adRequest);
 
