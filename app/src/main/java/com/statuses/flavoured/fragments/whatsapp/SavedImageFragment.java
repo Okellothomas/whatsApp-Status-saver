@@ -82,6 +82,7 @@ public class SavedImageFragment extends Fragment {
     private ActionMode mActionMode;
     Fragment frg;
     FragmentTransaction ft=null;
+    AdView adView;
 
     private int STORAGE_PERMISSION_CODE = 11;
 
@@ -110,12 +111,12 @@ public class SavedImageFragment extends Fragment {
         implementRecyclerViewClickListeners();
 
 
-       AdView adView = new AdView(activity);
+        AdView adView = new AdView(activity);
         adView.setAdSize(AdSize.BANNER);
         adView.setAdUnitId("ca-app-pub-3940256099942544/6300978111");
-        //mAdView = v.findViewById(R.id.adView);
+        mAdView = v.findViewById(R.id.vadView);
         AdRequest adRequest = new AdRequest.Builder().build();
-        /*mAdView.loadAd(adRequest);
+        mAdView.loadAd(adRequest);
 
          InterstitialAd.load(getContext(),"ca-app-pub-7913609625908071/5998375754", adRequest,
                 new InterstitialAdLoadCallback() {
@@ -133,7 +134,7 @@ public class SavedImageFragment extends Fragment {
                         Log.i(TAG, loadAdError.getMessage());
                         mInterstitialAd = null;
                     }
-                });*/
+                });
 //        MobileAds.initialize(getContext());
 //        AdLoader adLoader = new AdLoader.Builder(getContext(), "ca-app-pub-3940256099942544/2247696110")
 //                .forNativeAd(new NativeAd.OnNativeAdLoadedListener() {
