@@ -10,14 +10,18 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-<!--        <com.google.android.ads.nativetemplates.TemplateView-->
-<!--            android:id="@+id/template"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            app:gnt_template_type="@layout/gnt_medium_template_view"-->
-<!--            app:layout_constraintBottom_toTopOf="@+id/linear"-->
-<!--            app:layout_constraintEnd_toEndOf="parent"-->
-<!--            app:layout_constraintTop_toTopOf="parent" />-->
+        <FrameLayout
+            android:id="@+id/homer_banner_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.985" />
+
         <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
             android:id="@+id/ref"
             android:layout_width="match_parent"
