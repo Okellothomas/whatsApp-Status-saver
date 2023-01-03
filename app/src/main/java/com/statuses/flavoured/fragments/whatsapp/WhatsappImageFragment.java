@@ -20,15 +20,19 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import android.os.Environment;
+import android.util.DisplayMetrics;
 import android.util.SparseBooleanArray;
+import android.view.Display;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.google.android.gms.ads.AdLoader;
 import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdSize;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.ads.initialization.InitializationStatus;
@@ -75,6 +79,9 @@ public class WhatsappImageFragment extends Fragment {
     Fragment frg;
     FragmentTransaction ft=null;
 
+    FrameLayout frameLayout;
+    AdView adView;
+
     List<File> selected_Files = new ArrayList<>();
 
     private int STORAGE_PERMISSION_CODE = 11;
@@ -94,6 +101,23 @@ public class WhatsappImageFragment extends Fragment {
        mInterstitialAd = new InterstitialAd(activity);
        mInterstitialAd.setAdUnitId(getString(R.string.interstitial_full_screen));
        mInterstitialAd.loadAd(new AdRequest.Builder().build());*/
+
+
+        MobileAds.initialize(getContext(), new OnInitializationCompleteListener() {
+            @Override
+            public void onInitializationComplete(InitializationStatus initializationStatus) { }
+        });
+
+        frameLayout = getActivity().findViewById(R.id.homer_banner_container);
+        adView = new AdView(getContext());
+        adView.setAdUnitId(getString(R.string.banner_id));
+        frameLayout.addView(adView);
+
+        AdRequest adRequest = new AdRequest.Builder().build();
+
+        AdSize adSize = getAdSize();
+        adView.setAdSize(adSize);
+        adView.loadAd(adRequest);
 
         mInstance = this;
         swipeRefreshLayout = (SwipeRefreshLayout) v.findViewById(R.id.ref);
@@ -161,6 +185,19 @@ public class WhatsappImageFragment extends Fragment {
             }
         });*/
         return v;
+    }
+
+    private AdSize getAdSize() {
+        Display display = getActivity().getWindowManager().getDefaultDisplay();
+        DisplayMetrics outMetrics = new DisplayMetrics();
+        display.getMetrics(outMetrics);
+
+        // If the ad hasn't been laid out, default to the full screen width.
+        float adWidthPixels = outMetrics.widthPixels;
+        float density = outMetrics.density;
+        int adWidth = (int) (adWidthPixels / density);
+
+        return AdSize.getCurrentOrientationAnchoredAdaptiveBannerAdSize(getContext(), adWidth);
     }
 
     private void populateRecyclerView() {
