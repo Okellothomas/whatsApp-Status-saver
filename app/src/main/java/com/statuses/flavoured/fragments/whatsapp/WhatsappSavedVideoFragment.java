@@ -99,7 +99,7 @@ public class WhatsappSavedVideoFragment extends Fragment {
 
           AdRequest adRequest = new AdRequest.Builder().build();
 
-        InterstitialAd.load(getContext(),"ca-app-pub-7913609625908071/5998375754", adRequest,
+        InterstitialAd.load(getContext(),"ca-app-pub-5146882867836364/4676532051", adRequest,
                 new InterstitialAdLoadCallback() {
                     @Override
                     public void onAdLoaded(@NonNull InterstitialAd interstitialAd) {
@@ -143,7 +143,7 @@ public class WhatsappSavedVideoFragment extends Fragment {
 
         AdView adView = new AdView(activity);
         adView.setAdSize(AdSize.BANNER);
-        adView.setAdUnitId("ca-app-pub-3940256099942544/630097");
+        adView.setAdUnitId("ca-app-pub-5146882867836364/5801911468");
         mAdView = v.findViewById(R.id.vadView);
         mAdView.loadAd(adRequest);
 

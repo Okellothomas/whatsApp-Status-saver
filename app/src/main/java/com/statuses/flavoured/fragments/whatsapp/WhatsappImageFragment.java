@@ -121,7 +121,7 @@ public class WhatsappImageFragment extends Fragment {
 
         AdView adView = new AdView(activity);
         adView.setAdSize(AdSize.BANNER);
-        adView.setAdUnitId("ca-app-pub-3940256099942544/630097");
+        adView.setAdUnitId("ca-app-pub-5146882867836364/5801911468");
         mAdView = v.findViewById(R.id.vadView);
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);

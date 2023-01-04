@@ -25,7 +25,7 @@ public class IntertsitialAdmob {
 
         AdRequest adRequest = new AdRequest.Builder().build();
 
-        InterstitialAd.load(context,"ca-app-pub-3940256099942544/1033173712", adRequest,
+        InterstitialAd.load(context,"ca-app-pub-5146882867836364/4676532051", adRequest,
                 new InterstitialAdLoadCallback() {
                     @Override
                     public void onAdLoaded(@NonNull InterstitialAd interstitialAd) {
