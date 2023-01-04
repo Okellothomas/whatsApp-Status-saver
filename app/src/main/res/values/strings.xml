@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">StatusSaver</string>
+    <string name="app_name">Status Saver</string>
     <!-- TODO: Remove or change this placeholder text -->
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
@@ -15,8 +15,8 @@
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
 
-    <string name="ap_id">ca-app-pub-3940256099942544~3347511713</string>
-    <string name="banner_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="ap_id">ca-app-pub-5146882867836364~6266328789</string>
+    <string name="banner_id">ca-app-pub-5146882867836364/5801911468</string>
 
 
 </resources>
