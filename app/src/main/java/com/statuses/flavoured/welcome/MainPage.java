@@ -7,6 +7,7 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 
+import com.statuses.flavoured.MainActivity;
 import com.statuses.flavoured.R;
 
 public class MainPage extends AppCompatActivity {
@@ -48,7 +49,7 @@ public class MainPage extends AppCompatActivity {
                      */
                     finish();
                 } else {
-                    Intent intent = new Intent(getApplicationContext(), Downloader.class);
+                    Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                     /**
                      * We call the startActivity method and pass to it out intent
                      */
