@@ -250,9 +250,8 @@ public class SavedVideoViewer extends AppCompatActivity{
                     }
                 });
 
-                builder.create().show();
 //                builder.create().show();
-                Toast.makeText(getApplicationContext(), "Video Deleted", Toast.LENGTH_SHORT).show();
+
 
                 if (IntertsitialAdmob.mInterstitialAd != null){
 
@@ -269,6 +268,9 @@ public class SavedVideoViewer extends AppCompatActivity{
                         }
                     });
                 }
+
+                builder.create().show();
+                Toast.makeText(getApplicationContext(), "Video Deleted", Toast.LENGTH_SHORT).show();
 
 //                if (mInterstitialAd != null) {
 //                    mInterstitialAd.show(SavedVideoViewer.this);

@@ -81,7 +81,7 @@ public class ToolbarActionModeCallback implements androidx.appcompat.view.Action
 
         //Sometimes the meu will not be visible so for that we need to set their visibility manually in this method
         //So here show action menu_main according to SDK Levels
-        if (Build.VERSION.SDK_INT < 11) {
+        if (Build.VERSION.SDK_INT < 11 ) {
             MenuItemCompat.setShowAsAction(menu.findItem(R.id.action_delete), MenuItemCompat.SHOW_AS_ACTION_NEVER);
             MenuItemCompat.setShowAsAction(menu.findItem(R.id.action_save), MenuItemCompat.SHOW_AS_ACTION_NEVER);
         } else {

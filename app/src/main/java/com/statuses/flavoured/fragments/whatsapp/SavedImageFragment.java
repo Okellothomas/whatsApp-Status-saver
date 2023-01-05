@@ -417,6 +417,10 @@ public class SavedImageFragment extends Fragment {
     }
 
 
+    /**
+     * Made change from target 23
+     * @return
+     */
 
     @TargetApi(23)
     public boolean requestPermission() {
